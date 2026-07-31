@@ -4,8 +4,8 @@
 
 ## Варианты композиции
 
-- [Вариант 1 — сбалансированный](./?variant=1)
-- [Вариант 2 — монументальный](./?variant=2)
-- [Вариант 3 — редакционный](./?variant=3)
+- [Вариант 1 — сбалансированный](https://ivanweb1.github.io/delo-spectehniki-2026-concepts/?variant=1)
+- [Вариант 2 — монументальный](https://ivanweb1.github.io/delo-spectehniki-2026-concepts/?variant=2)
+- [Вариант 3 — редакционный](https://ivanweb1.github.io/delo-spectehniki-2026-concepts/?variant=3)
 
 Во всех вариантах используются одинаковые тексты и фирменные элементы; изменяется только композиция первого экрана.
