@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Премия «Дело Спецтехники 2026» — закрытая церемония для руководителей ведущих компаний отрасли."
+    />
+    <title>Премия «Дело Спецтехники 2026»</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Основная навигация">
+      <div class="header-top">
+        <a class="brand" href="#top" aria-label="Авито Спецтехника, на главную">
+          <img src="assets/logo-official-2.svg" alt="Авито Спецтехника" />
+        </a>
+
+        <nav class="site-nav" id="site-nav" aria-label="Разделы страницы" data-open="false">
+          <a href="#about">О премии</a>
+          <a href="#nominations">Номинации 2026</a>
+          <a href="#winners">Победители</a>
+          <a href="#partners">Партнеры</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Меню
+        </button>
+
+        <button class="header-cta js-open-form" type="button">Получить приглашение</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            Премия «Дело
+            <span class="title-tail">
+              <span class="underlined">Спецтехники</span>
+              <span class="year">2026»</span>
+            </span>
+          </h1>
+
+          <p class="hero-lead">
+            Главная ежегодная премия рынка спецтехники и коммерческого транспорта России.
+            Закрытая церемония, где встречаются руководители ведущих производителей,
+            дилеров, дистрибьюторов и партнеров отрасли.
+          </p>
+
+          <dl class="event-facts">
+            <div>
+              <dt>Когда</dt>
+              <dd>1 октября 2026 г. · 17:00</dd>
+            </div>
+            <div>
+              <dt>Где</dt>
+              <dd>Отель Marriott Imperial Plaza · Москва</dd>
+            </div>
+          </dl>
+
+          <div class="hero-action">
+            <button class="primary-button js-open-form" type="button">Получить приглашение</button>
+            <p>Участие бесплатное.<br />Регистрация подтверждается организаторами.</p>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div
+            class="photo-placeholder"
+            role="img"
+            aria-label="Место для большой фотографии церемонии прошлого года"
+          >
+            <span>Большая фотография церемонии прошлого года</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="badges" aria-label="Ключевые особенности премии">
+          <div class="badge">
+            <img class="badge-icon" src="assets/icon-check.svg" alt="" aria-hidden="true" />
+            <strong>Более 10 отраслевых номинаций</strong>
+          </div>
+          <div class="badge">
+            <img class="badge-icon" src="assets/icon-dialog.svg" alt="" aria-hidden="true" />
+            <strong>Закрытое мероприятие для первых лиц компаний</strong>
+          </div>
+          <div class="badge">
+            <img class="badge-icon" src="assets/icon-tools.svg" alt="" aria-hidden="true" />
+            <strong>Производители • Дилеры • Дистрибьюторы • Арендные и лизинговые компании</strong>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <h2 id="about-title">О <span class="underlined">премии</span></h2>
+
+          <div class="about-copy">
+            <p class="about-lead">
+              Ежегодная отраслевая премия рынка коммерческого транспорта и спецтехники
+              в России в рамках национального форума «Дело Спецтехники» от НАДДиПС
+              и Авито Спецтехника.
+            </p>
+            <p>
+              Каждый год Премия «Дело Спецтехники» собирает руководителей крупнейших
+              компаний отрасли, чтобы отметить тех, кто задает стандарты развития рынка.
+            </p>
+            <p>
+              Здесь встречаются производители, дилеры, дистрибьюторы, арендные и лизинговые
+              компании, чтобы подвести итоги года, обменяться опытом и поздравить победителей.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="invite-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close js-close-form" type="button" aria-label="Закрыть форму">×</button>
+      <span class="dialog-kicker">Формат участия: оффлайн</span>
+      <h2 id="dialog-title">Получить приглашение</h2>
+      <p>Получите приглашение на Премию «Дело Спецтехники 2026».</p>
+
+      <form id="invite-form">
+        <label>
+          <span>ФИО</span>
+          <input name="name" autocomplete="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input name="email" type="email" autocomplete="email" required />
+        </label>
+        <label>
+          <span>Компания</span>
+          <input name="company" autocomplete="organization" required />
+        </label>
+        <label>
+          <span>Должность</span>
+          <input name="position" autocomplete="organization-title" required />
+        </label>
+        <label>
+          <span>Телефон</span>
+          <input name="phone" type="tel" autocomplete="tel" required />
+        </label>
+        <label class="consent-field">
+          <input name="consent" type="checkbox" required />
+          <span>
+            Согласие на обработку персональных данных и рекламных материалов от Авито.
+            <a href="https://www.avito.ru/legal/rules/privacy-policy">Политика конфиденциальности</a>
+          </span>
+        </label>
+        <button class="primary-button" type="submit">Отправить заявку</button>
+      </form>
+
+      <div class="form-success" aria-live="polite">
+        Ваша заявка отправлена на модерацию, пожалуйста, ожидайте подтверждение организаторов.
+      </div>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
