@@ -257,6 +257,7 @@ h1 .year {
 
 .hero-media {
   min-width: 0;
+  margin-right: calc(-1 * var(--page-x));
 }
 
 /* Вариант 02: вертикальный, более церемониальный набор заголовка. */
@@ -345,23 +346,26 @@ h1 .year {
 }
 
 .photo-placeholder {
-  height: clamp(430px, 65svh, 660px);
-  display: flex;
-  align-items: flex-end;
-  border: 1px solid rgba(0, 170, 255, 0.82);
-  border-radius: 28px;
-  padding: 28px;
-  background:
-    linear-gradient(180deg, rgba(25, 36, 53, 0.02), rgba(25, 36, 53, 0.68)),
-    linear-gradient(45deg, #192435 0%, #66798c 100%);
-  box-shadow: inset 0 -3px 0 var(--blue);
+  position: relative;
+  height: clamp(480px, 74svh, 700px);
+  overflow: hidden;
+  background: transparent;
 }
 
-.photo-placeholder span {
-  max-width: 360px;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.05;
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent 0%, #000 16%, #000 100%),
+    linear-gradient(180deg, transparent 0%, #000 13%, #000 87%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(90deg, transparent 0%, #000 16%, #000 100%),
+    linear-gradient(180deg, transparent 0%, #000 13%, #000 87%, transparent 100%);
+  mask-composite: intersect;
 }
 
 .about {
@@ -722,6 +726,10 @@ h1 .year {
   .photo-placeholder {
     height: 58svh;
     min-height: 420px;
+  }
+
+  .hero-media {
+    margin-right: 0;
   }
 
   .about {
